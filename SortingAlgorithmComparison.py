@@ -15,9 +15,10 @@ import copy
 def bubble_sort(array):
     
     length = len(array)
+    
     for i in range(length): # Pass through the array N times, where N is the length of the array.
-        for j in range(length-i-1): # After i passes, the final i elements will be sorted. 
-            # We want to loop through the unsorted part.
+        
+        for j in range(length-i-1): # After i passes, the final i elements will be sorted. We want to loop through the unsorted part.
             
             # For two consecutive elements, if the left element is greater than the right element, swap the elements.
             if array[j] > array[j+1]:
@@ -31,23 +32,23 @@ def merge(a, b): # Function to merge two sorted arrays.
     
     merged_array = []
     
-    if a == None or b == None:
+    if not a or not b:
         return a if not b else a
     
-    while (len(a) > 0 and len(b) > 0):
+    while (len(a) and len(b)):
         
         if a[0] < b[0]:
             merged_array.append(a[0])
             
-            a = a[1:]
+            a.pop(0)
         else:
             merged_array.append(b[0])
             
-            b = b[1:]
+            b.pop(0)
     
-    if len(a) > 0:
+    if len(a):
         merged_array.extend(a)
-    elif len(b) > 0:
+    elif len(b):
         merged_array.extend(b)
     
     return merged_array
