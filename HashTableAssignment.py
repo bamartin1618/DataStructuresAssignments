@@ -13,7 +13,7 @@ class HashTable: # Class to implement hash tables.
     
     def __init__(self, load_factor, resize_factor, buckets):
         
-        self.load_factor = load_factor # The load factor is the ratio of the number of keys to the number of buckets. It determines when we resize the hash table.
+        self.load_factor = load_factor # The load factor is the threshold the ratio of keys to buckets must reach before the hash table is resized.
         
         self.resize_factor = resize_factor # The resize factor determines how much more space is allocated to the hash table when resizing 
         # (e.g. if the resize factor is two, after resizing, a lookup table with 50 buckets will have 100 buckets.)
