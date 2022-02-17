@@ -1,22 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Hash Table Implementation
-# 
-# <p>Write a class that builds a hash table from scratch. You must implement the following features: </p>
-# 
-# <ul>
-#     <li>Add a key-value pair to the hash table</li>
-#     <li>Get a key-value pair from the hash table</li>
-#     <li>Delete a key-value pair from the hash table</li>
-#     <li>Hash a key using a hash function</li>
-#     <li>Resize the hash-table using a load factor</li>
-# </ul>
-# 
-# <p>The implementation is correct if each method implementation has an average time-complexity of $O(1)$</p>
-# 
-# <p>To test the performance of your hash table implementation, compare the time it takes to perform a task against an array.</p>
-
 # In[1]:
 
 
